@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>음료수 자판기</title>
+  <script defer src="./main.js"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Do+Hyeon&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <div id="machine">
+    <h1>음료수 자판기</h1>
+    <div id="menu">
+      <div class="wrap">
+        <img src="./images/water.png" alt="물">
+        <button type="button" class="drink-water impossible">물(500원)</button>
+      </div>
+      <div class="wrap">
+        <img src="./images/coffee.jpg" alt="커피">
+        <button type="button" class="drink-coffee impossible">커피(700원)</button>
+      </div>
+      <div class="wrap">
+        <img src="./images/cornwater.jpg" alt="옥수수수염차">
+        <button type="button" class="drink-cornwater impossible">옥수수수염차(1,000원)</button>
+      </div>
+    </div>
+    <div id="wallet">
+      <h2>동전투입</h2>
+      <div class="money-wrap">
+        <button type="button" class="money-100">100원</button>
+        <button type="button" class="money-500">500원</button>
+        <button type="button" class="money-1000">1,000원</button>
+      </div>
+    </div>
+    <div id="current"></div>
+  </div>
+</body>
+</html>
