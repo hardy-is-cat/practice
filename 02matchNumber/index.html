@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>숫자 맞추기</title>
+  <script defer src="./main.js"></script>
+  <style>
+    input:focus::-webkit-input-placeholder {
+      color: transparent;
+    }
+    input:focus::-moz-placeholder {
+      color: transparent;
+    }
+    input:focus:-ms-input-placeholder {
+      color: transparent;
+    }
+    input:focus::-ms-input-placeholder {
+      color: transparent;
+    }
+
+    body {
+      width: 600px;
+      margin: 0 auto;
+    }
+
+    .lastresult {
+      color: white;
+      padding: 3px;
+    }
+  </style>
+</head>
+<body>
+  <h1>랜덤 숫자 맞추기</h1>
+  <p>
+    1부터 100까지의 숫자 중 랜덤한 숫자가 지정되어 있습니다.<br>
+    업, 다운의 힌트가 있으니 10번의 기회 안에 숫자를 맞춰보세요!
+  </p>
+  <form id="form">
+    <input type="text" id="input-number" placeholder="숫자를 넣어주세요." autocomplete="off">
+    <input type="submit" id="input-submit" value="맞추기">
+  </form>
+  <div class="resultbox">
+    <p class="guesses"></p>
+    <p class="lastresult"></p>
+    <p class="low-or-high"></p>
+  </div>
+</body>
+</html>
